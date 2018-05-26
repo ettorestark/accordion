@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.accordion {
+    background-color: #EEE;
+    color: #444;
+    cursor: pointer;
+    padding: 1.1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #CCC;
+}
+
+.accordion:after {
+	content: "+";
+	color: #777;
+	font-weight: bold;
+	float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+	display: none;
+	padding: 0 1.1em;
+	background: #FFF;
+	overflow: hidden;
+}
